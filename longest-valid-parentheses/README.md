@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/4/2021 at 11:45)](https://leetcode.com/problems/longest-valid-parentheses/discuss/1222801/Simplest-0ms-100faster-C%2B%2B-solution)  
 <h2>32. Longest Valid Parentheses</h2><h3>Hard</h3><hr><div><p>Given a string containing just the characters <code>'('</code> and <code>')'</code>, find the length of the longest valid (well-formed) parentheses substring.</p>
 
 <p>&nbsp;</p>
