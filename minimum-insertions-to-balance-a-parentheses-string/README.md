@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/4/2021 at 18:42)](https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/discuss/1238392/One-pass-using-stack-with-explanation)  
 <h2>1541. Minimum Insertions to Balance a Parentheses String</h2><h3>Medium</h3><hr><div><p>Given a parentheses string <code>s</code> containing only the characters <code>'('</code> and <code>')'</code>. A parentheses string is <strong>balanced</strong> if:</p>
 
 <ul>
