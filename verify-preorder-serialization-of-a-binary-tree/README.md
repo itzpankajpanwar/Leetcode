@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/4/2021 at 10:7)](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/discuss/1239966/Single-Pass-Constant-space-Solution)  
 <h2>331. Verify Preorder Serialization of a Binary Tree</h2><h3>Medium</h3><hr><div><p>One way to serialize a binary tree is to use <strong>preorder traversal</strong>. When we encounter a non-null node, we record the node's value. If it is a null node, we record using a sentinel value such as <code>'#'</code>.</p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/03/12/pre-tree.jpg" style="width: 362px; height: 293px;">
 <p>For example, the above binary tree can be serialized to the string <code>"9,3,4,#,#,1,#,#,2,#,6,#,#"</code>, where <code>'#'</code> represents a null node.</p>
