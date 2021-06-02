@@ -1,22 +1,15 @@
 class Solution {
 public:
     int jump(vector<int>& nums) {
-    vector<int> dp(nums.size()+1,-1);
-    return solver(nums,0,dp);
-
-    }
+        
+    vector<int> temp(nums.size() , nums.size());
+    temp[0]=0;
     
-    int solver(vector<int>& nums,int index,vector<int>& dp)
+    for(int i=0;i<nums.size();i++)
     {
-        if(index==nums.size()-1)
-            return 0;
-        if(index>=nums.size())
-            return 1001;
-        if(dp[index] != -1)
-           return dp[index];
-        int mini=1001;
-        for(int i=1;i<=nums[index];i++)
-            mini = min(mini,1+solver(nums,index+i,dp));
-        return dp[index] = mini;     
+        for(int j=i+1; j<=i+nums[i] && j<nums.size() ; j++)
+            temp[j] = min( temp[j] , 1+temp[i]);
+    }    
+   return temp[nums.size()-1];  
     }
 };
