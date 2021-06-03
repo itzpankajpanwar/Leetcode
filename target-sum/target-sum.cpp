@@ -1,22 +1,26 @@
 class Solution {
 public:
+    
     int res=0;
     int findTargetSumWays(vector<int>& nums, int target) {
-    vector<int> dp;
-    return solveit(nums,0,target);
+    map< pair<int,int> , int > mp;
+    return solveit(nums,0,target , mp);
     }
     
-    int  solveit(vector<int> &nums,int i,int target)
+    int  solveit(vector<int> &nums,int i,int target , map< pair<int,int> ,int> &mp )
     {   
         if(target==0 && i==nums.size()) 
             return 1;
         if(i>=nums.size())
             return 0;
         
-        int a1 = solveit(nums, i+1 , target - nums[i]);
+        if( mp.find({i,target}) != mp.end())
+            return mp[{i,target}];
         
-        int a2 = solveit(nums , i+1 , target + nums[i]);
+        int a1 = solveit(nums, i+1 , target - nums[i] , mp );
         
-        return a1+a2;
+        int a2 = solveit(nums , i+1 , target + nums[i] , mp );
+        
+        return mp[{i,target}] = a1+a2;
     } 
 };
