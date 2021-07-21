@@ -1,20 +1,12 @@
 class Solution {
 public:
-    int minIncrementForUnique(vector<int>& nums) {
-    map<int,int> mp;
-    for(auto &x:nums) mp[x]++;
-        
-    int res=0;
-    for(auto &x:mp)
-    {
-        int i = x.first , j = x.second ; 
-        if(j>1)
-        {
-            res+=( ( j*(j-1)) / 2 );
-            for( int p= i+1; p < i+j; p++ )
-                mp[p]++;
+    int minIncrementForUnique(vector<int>& A) {
+    sort(A.begin(), A.end());
+        int res = 0, need = 0;
+        for (int a: A) {
+            res += max(need - a, 0);
+            need = max(a, need)+1;
         }
-    }
-    return res;
+        return res;
     }
 };
