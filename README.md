@@ -10,4 +10,5 @@ This repository contians all my leetcode submission
 
 Leetcode username : [itz_pankaj](https://leetcode.com/itz_pankaj/)
 
+<img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Coder GIF" width="500" height="400">
 Happy Coding 
