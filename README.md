@@ -1,6 +1,5 @@
 
 # [LeetCode Solutions](https://leetcode.com/problemset/all/)
-This repository contians all my leetcode submission . Exact description of question with example test cases and my accepted solution . Solution can be either in c++ or python language . 
 
 ![Languages](https://img.shields.io/badge/Language-C%2B%2B,Python-important)&nbsp;
 ![Update](https://img.shields.io/badge/Update-Daily-brightgreen)&nbsp;
